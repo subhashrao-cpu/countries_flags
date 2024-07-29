@@ -32,7 +32,7 @@ function Countries()
         fetch(API_URL)
         .then(res => res.json())
         .then((data) => setCountries(data))
-        .catch((error) => console.error("error: ", error));
+        .catch((error) => console.error("Error fetching data:", error));
     },[])
 
     return (
